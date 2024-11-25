@@ -1,0 +1,56 @@
+.about-header {
+  background-image: url("../images/about-images/about-header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-block: 30px 60px;
+  .content {
+    margin-top: 100px;
+    color: $white;
+  }
+  h2 {
+    color: $white;
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+}
+.about-company-section {
+  padding-block: 150px;
+}
+.mission-section {
+  background-image: url("../images/about-images/mission-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-block: 130px 150px;
+  .box {
+    padding: 70px 50px;
+    background-color: $white;
+    border-radius: 20px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .box-1 {
+    align-items: end;
+    height: 100%;
+  }
+  .gap {
+    row-gap: 50px;
+  }
+}
+.expert-section {
+  padding-block: 150px;
+  .img-box {
+    margin-top: 100px;
+    row-gap: 30px;
+    img {
+      filter: grayscale(1);
+    }
+  }
+}

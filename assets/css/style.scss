@@ -1,0 +1,80 @@
+@import "./font";
+@import "./variables";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@import "./mixins";
+.btn {
+  padding: 17px 32px;
+  box-shadow: none;
+  font-family: $GraphikLCG-Medium;
+  color: $black;
+  @include Font(16px, 22px);
+  &:focus-within {
+    outline: none;
+  }
+}
+.learn-more {
+  font-family: $GraphikLCG-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  color: $darck_blue;
+  img {
+    margin-left: 8px;
+  }
+}
+.section-heading {
+  font-family: $GraphikLCG-Medium !important;
+  color: #332f84;
+  text-shadow: 0 4px 14px #6963e4;
+  margin-bottom: 32px;
+}
+.font-16 {
+  @include Font(16px, 22px);
+  font-family: $GraphikLCG-Regular;
+}
+.font-18 {
+  @include Font(18px, 22px);
+  font-family: $GraphikLCG-Regular;
+}
+.font-20 {
+  @include Font(20px, 28px);
+  font-family: $GraphikLCG-Light;
+}
+.font-40 {
+  @include Font(40px, 48px);
+  font-family: $GraphikLCG-Bold;
+}
+.font-50 {
+  @include Font(50px, 68px);
+  font-family: $GraphikLCG-Bold;
+}
+
+@import "./home";
+@import "./about";
+@import "./services";
+@import "./responsive";
